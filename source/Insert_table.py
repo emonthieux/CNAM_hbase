@@ -31,7 +31,7 @@ def parse_folder(folder, table):
             df = pd.read_csv(os.path.join(folder, files))
             csv2hbase(df, table)
     
-def main():
+if __name__ == '__main__':
     connection = hb.Connection('localhost')
     connection.open()
     table = connection.table('test')
