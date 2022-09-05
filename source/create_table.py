@@ -1,9 +1,4 @@
-from unicodedata import name
-import pandas as pd
 import happybase as hb
-import sys
-import os
-import datetime
 
 # Create hbase table
 if __name__ == '__main__':
