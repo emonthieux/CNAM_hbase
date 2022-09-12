@@ -58,7 +58,7 @@ public class Insert_table {
                     String[] values = line.split(",");
                     
                     // Timestamp
-                    SimpleDateFormat ts = SimpleDateFormat.new("yy/MM/dd HH:mm:ss").parse(values[1], ParsePosition.new(0)).getTime()
+                    SimpleDateFormat ts = SimpleDateFormat.new("yy/MM/dd HH:mm:ss").parse(values[1], ParsePosition.new(0)).getTime();
                     // Create the put
                     Put p = new Put(Bytes.toBytes(values[2] + "-" + values[3]));        
 
@@ -83,7 +83,7 @@ public class Insert_table {
 
                 // Close the table
                 hTable.close();            
-
+            }
         }
 
     }
